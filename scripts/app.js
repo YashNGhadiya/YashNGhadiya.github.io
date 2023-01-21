@@ -2,6 +2,7 @@
 
 (function () {
 
+
    function DisplayHomePage() {
        let AboutUsButton = document.getElementById("AboutUsBtn");
        AboutUsButton.addEventListener("click",function (){
@@ -10,6 +11,16 @@
 
 
    }
+    let MainContent = document.getElementsByTagName("main");
+   let MainParagraph = document.createElement("p");
+
+
+   MainParagraph.setAttribute("id","MainParagraph");
+   MainParagraph.setAttribute("class", "mt-3");
+   MainParagraph.textContent = "This is the Main Paragraph!";
+   MainContent.appendChild(MainParagraph);
+
+
    function DisplayProductsPage() {
        let ProductButton = document.getElementById("ProductBtn");
        ProductButton.addEventListener("click",function (){
